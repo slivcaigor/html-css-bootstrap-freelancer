@@ -1,0 +1,52 @@
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+/* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+:root {
+  --body-clr: #99AA38;
+  --bg-clr: #595758;
+  --title-clr: #ffff;
+  --subtitle-clr: #000;
+  --border-clr: #F6AE2D;
+  --nested-clr: #402039;
+}
+
+/* debug */
+[class*="col"] {
+  background-color: var(--body-clr);
+  border: dashed 2px var(--border-clr);
+  min-height: 50px;
+}
+
+[class*="offset-"] {
+  background-color: var(--body-clr);
+  min-height: 50px;
+}
+
+/*************************************************
+    TOP BAR STYLES
+ *************************************************/
+.top-bar .row {
+  height: 100px;
+}
+
+.top-bar {
+  background-color: var(--bg-clr);
+  height: 100px;
+}
+
+.jumbo {
+  background-color: var(--nested-clr);
+  height: 600px;
+}
+
+.jumbo .row {
+  height: 500px;
+}
