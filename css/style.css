@@ -22,7 +22,6 @@
 [class*="col"] {
   background-color: var(--body-clr);
   border: dashed 2px var(--border-clr);
-  min-height: 50px;
 }
 
 [class*="offset-"] {
@@ -30,11 +29,25 @@
   min-height: 50px;
 }
 
+a {
+  color: var(--title-clr);
+  font-weight: 600;
+  text-decoration: none;
+}
+
 /*************************************************
-    TOP BAR STYLES
+  DEBUG
  *************************************************/
+/* Top Bar */
 .top-bar .row {
   height: 100px;
+}
+
+.logo,
+.navigation {
+  height: 50px;
+  background-color: var(--subtitle-clr);
+  border: dashed 2px var(--border-clr);
 }
 
 .top-bar {
@@ -42,11 +55,64 @@
   height: 100px;
 }
 
+/* Hero/Jumbo */
 .jumbo {
   background-color: var(--nested-clr);
   height: 600px;
 }
 
-.jumbo .row {
-  height: 500px;
+.hero-avatar {
+  height: 200px;
+  background-color: var(--subtitle-clr);
+  border: dashed 2px var(--border-clr);
+}
+
+.hero-text,
+.decoration,
+.hero-subheading {
+  height: 100px;
+  background-color: var(--subtitle-clr);
+  border: dashed 2px var(--border-clr);
+}
+
+/* Section Portfolio */
+.portfolio {
+  background-color: var(--bg-clr);
+  height: 1000px;
+}
+
+.title {
+  height: 100px;
+  background-color: var(--subtitle-clr);
+  border: dashed 2px var(--border-clr);
+}
+
+.card {
+  height: 250px;
+  background-color: var(--subtitle-clr);
+  order: dashed 2px var(--border-clr);
+
+}
+
+/* Section About */
+.about {
+  background-color: var(--nested-clr);
+  height: 400px;
+}
+
+/* Section Contact Me */
+.contact-me {
+  background-color: var(--bg-clr);
+  height: 600px;
+}
+
+/* Footer */
+.footer-top {
+  background-color: var(--nested-clr);
+  height: 400px;
+}
+
+.footer-bottom {
+  background-color: var(--bg-clr);
+  height: 150px;
 }
