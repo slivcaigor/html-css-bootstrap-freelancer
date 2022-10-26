@@ -134,6 +134,7 @@
 .btn-download {
   border: 2px solid var(--title-w-clr);
   width: min(50vw, 200px);
+  cursor: pointer;
 }
 
 .btn-download span {
@@ -202,7 +203,8 @@
   font-weight: 600;
 }
 
-.footer-top span {
+.footer-top span a {
+  text-decoration: none;
   color: var(--accent-clr);
 }
 
@@ -224,6 +226,11 @@
   border-radius: 50%;
 }
 
+.footer-bottom span {
+  color: var(--title-w-clr);
+  font-weight: 600;
+  font-size: clamp(1rem, 7vw, 1rem);
+}
 
 /*************************************************
   RESPONSIVE
