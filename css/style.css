@@ -117,37 +117,40 @@
   max-width: 100%;
 }
 
-
-
-
-
-
-
-
-
-/* Section About */
+/*************************************************
+  ABOUT SECTION
+ *************************************************/
 .about {
   background-color: var(--accent-clr);
 }
 
-.about-title {
-  background-color: var(--title-b-clr);
-  border: dashed 2px var(--accent-clr);
-  height: 50px;
-}
-
 .left-text,
 .right-text {
-  height: 150px;
-  background-color: var(--title-b-clr);
-  border: dashed 2px var(--border-clr);
+  color: var(--title-w-clr);
+  font-weight: 600;
+  font-size: clamp(1.2rem, 3.5vw, 1.5rem);
 }
 
 .btn-download {
-  background-color: var(--title-b-clr);
-  border: dashed 2px var(--border-clr);
-  height: 50px;
+  border: 2px solid var(--title-w-clr);
+  width: min(50vw, 200px);
 }
+
+.btn-download span {
+  color: var(--title-w-clr);
+  font-size: clamp(1.2rem, 3.5vw, 1.3rem);
+}
+
+.btn-download i {
+  color: var(--title-w-clr);
+  font-size: clamp(1.2rem, 3.5vw, 1.3rem);
+}
+
+
+
+
+
+
 
 /* Section Contact Me */
 .contact-me {
