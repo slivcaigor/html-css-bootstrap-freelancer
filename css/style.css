@@ -69,7 +69,7 @@
   font-size: clamp(.6rem, 4vw, 1.4rem);
 }
 
-.fa-star {
+.decoration .fa-star {
   color: var(--title-w-clr);
   font-size: clamp(1rem, 7vw, 2rem);
 }
@@ -84,29 +84,46 @@
   width: min(25vw, 250px);
 }
 
-
-
-
-
-
-
-
-/* Section Portfolio */
+/*************************************************
+  PORTFOLIO SECTION
+ *************************************************/
 .portfolio {
-  background-color: var(--bar-clr);
+  background-color: var(--title-w-clr);
 }
 
-.title {
-  height: 100px;
-  background-color: var(--title-b-clr);
-  border: dashed 2px var(--accent-clr);
+.portfolio-text {
+  color: var(--title-b-clr);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: clamp(1rem, 10vw, 3rem);
 }
 
-.card {
-  height: 250px;
-  background-color: var(--title-b-clr);
-  border: dashed 2px var(--accent-clr);
+.decoration-blck .fa-star {
+  color: var(--title-b-clr);
+  font-size: clamp(1rem, 7vw, 2rem);
 }
+
+.decoration-blck span:before,
+.decoration-blck span:after {
+  background-color: var(--title-b-clr);
+  content: "";
+  display: inline-block;
+  height: 4px;
+  border-radius: 10px;
+  width: min(25vw, 250px);
+}
+
+.portfolio-card img {
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
 
 /* Section About */
 .about {
