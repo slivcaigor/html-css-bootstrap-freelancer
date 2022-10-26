@@ -16,6 +16,7 @@
   font-weight: 600;
   font-size: clamp(1.3rem, 3.5vw, 2rem);
   color: var(--title-w-clr);
+  text-transform: uppercase;
 }
 
 .nav-link:hover {
@@ -26,6 +27,7 @@
   font-weight: 600;
   font-size: clamp(1rem, 2vw, 1.2rem);
   color: var(--title-w-clr);
+  text-transform: uppercase;
 }
 
 .top-bar {
@@ -39,29 +41,55 @@
   display: none;
 }
 
-/* Hero/Jumbo */
+/*************************************************
+  JUMBO SECTION
+ *************************************************/
 .jumbo {
   background-color: var(--accent-clr);
 }
 
+.hero-avatar img {
+  max-width: 100%;
+}
+
 .hero-avatar {
-  height: 200px;
-  background-color: var(--title-b-clr);
-  border: dashed 2px var(--accent-clr);
+  width: min(50vw, 300px)
 }
 
-.decoration {
-  height: 50px;
-  background-color: var(--title-b-clr);
-  border: dashed 2px var(--accent-clr);
+.hero-text {
+  text-transform: uppercase;
+  color: var(--title-w-clr);
+  font-weight: 700;
+  font-size: clamp(1rem, 10vw, 3.5rem);
 }
 
-.hero-text,
 .hero-subheading {
-  height: 100px;
-  background-color: var(--title-b-clr);
-  border: dashed 2px var(--accent-clr);
+  text-transform: uppercase;
+  color: var(--title-w-clr);
+  font-size: clamp(.6rem, 4vw, 1.4rem);
 }
+
+.fa-star {
+  color: var(--title-w-clr);
+  font-size: clamp(1rem, 7vw, 2rem);
+}
+
+.decoration span:before,
+.decoration span:after {
+  background-color: var(--title-w-clr);
+  content: "";
+  display: inline-block;
+  height: 4px;
+  border-radius: 10px;
+  width: min(25vw, 250px);
+}
+
+
+
+
+
+
+
 
 /* Section Portfolio */
 .portfolio {
