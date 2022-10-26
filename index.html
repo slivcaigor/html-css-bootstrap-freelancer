@@ -39,7 +39,7 @@
                   </li>
                 </ul>
               </div>
-              <span><i class="fa-solid fa-bars p-2"></i></span>
+              <span><i class="fa-solid fa-bars"></i></span>
             </div>
           </div>
         </nav>
@@ -60,7 +60,6 @@
       </div>
     </section>
   </header>
-
   <main>
     <section class="portfolio">
       <div class="container py-3">
@@ -71,7 +70,6 @@
           </div>
         </div>
       </div>
-
       <div class="container">
         <div class="row mb-2">
           <div class="col-12 col-md-6 col-xl-4">
@@ -107,7 +105,6 @@
         </div>
       </div>
     </section>
-
     <section class="about">
       <div class="container py-4">
         <div class="row text-center">
@@ -138,33 +135,44 @@
         </div>
       </div>
     </section>
-
     <section class="contact-me">
       <div class="container">
-        <div class="row py-5 justify-content-center">
+        <div class="row text-center justify-content-center py-4">
           <div class="col-8">
-            <div class="contact-title"></div>
-            <div class="decoration"></div>
-            <form class="contact" action="#" method="post">
-
-              <label for="name">Il tuo nome</label>
-              <input type="text" id="name" placeholder="Inserisci il tuo nome" required><br>
-              <label for="email">La tua email</label>
-              <input type="email" id="email" placeholder="Inserisci la tua email migliore" required><br>
-              <label for="message">Il tuo messaggio</label>
-              <textarea name="message" id="message" cols="30" placeholder="Il tuo messaggio" rows="10"></textarea><br>
-              <label for="privacy">Accetta la nostra privacy</label>
-              <input type="checkbox" name="privacy" id="privacy" required><br>
-              <input type="submit" value="Invia">
-
-
-
-
-
-
-
-            </form>
+            <div class="contact-text">contact me</div>
+            <div class="decoration-blck-contact">
+              <span><i class="fa-solid fa-star px-4 align-middle"></i></span>
+            </div>
           </div>
+        </div>
+        <div class="row">
+          <form class="contact" action="#" method="post">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="name" placeholder="Enter your name" class="form-control" id="name"
+                aria-describedby="nameHelp">
+              <div id="nameHelp" class="form-text">We'll never share your name with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" placeholder="Enter your best email" class="form-control" id="email"
+                aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone number</label>
+              <input type="phone" placeholder="Enter a valid phone number" class="form-control" id="phone"
+                aria-describedby="phoneHelp" required>
+              <div id="phoneHelp" class="form-text">We'll never share your phone number with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" value="Send" class="btn-contact mb-3 rounded px-3 py-2">
+              <span>Send</span>
+            </button>
+          </form>
         </div>
       </div>
     </section>

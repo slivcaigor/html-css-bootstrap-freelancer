@@ -146,24 +146,46 @@
   font-size: clamp(1.2rem, 3.5vw, 1.3rem);
 }
 
-
-
-
-
-
-
-/* Section Contact Me */
-.contact-me {
-  background-color: var(--bar-clr);
+/*************************************************
+  CONTACT ME SECTION
+ *************************************************/
+.btn-contact {
+  width: min(50vw, 200px);
+  all: unset;
+  background-color: var(--accent-clr);
 }
 
-.contact {
+.btn-contact span {
+  color: var(--title-w-clr);
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  font-weight: 600;
+}
+
+.contact-text {
+  color: var(--title-b-clr);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: clamp(1rem, 9vw, 3rem);
+}
+
+.decoration-blck-contact .fa-star {
+  color: var(--title-b-clr);
+  font-size: clamp(1rem, 7vw, 2rem);
+}
+
+.decoration-blck-contact span:before,
+.decoration-blck-contact span:after {
   background-color: var(--title-b-clr);
-  border: dashed 2px var(--border-clr);
-  height: 400px;
+  content: "";
+  display: inline-block;
+  height: 4px;
+  border-radius: 10px;
+  width: min(18vw, 250px);
 }
 
-/* Footer */
+/*************************************************
+  FOOTER SECTION
+ *************************************************/
 .footer-top {
   background-color: var(--accent-clr);
 }
@@ -188,6 +210,7 @@
 @media all and (max-width: 992px) {
   .fa-bars {
     display: block;
+    width: 0;
   }
 
   .navbar-nav {
