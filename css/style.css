@@ -1,147 +1,148 @@
 /*************************************************
     GENERAL STYLES
  *************************************************/
-/* *,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 :root {
-  --body-clr: #99AA38;
-  --bg-clr: #595758;
-  --title-clr: #ffff;
-  --subtitle-clr: #000;
-  --border-clr: #F6AE2D;
-  --nested-clr: #402039;
-}
-
-/* debug */
-[class*="col"] {
-  background-color: var(--body-clr);
-  border: dashed 2px var(--border-clr);
-}
-
-[class*="offset-"] {
-  background-color: var(--body-clr);
-  min-height: 50px;
-}
-
-a {
-  color: var(--title-clr);
-  font-weight: 600;
-  text-decoration: none;
+  --bar-clr: rgb(44, 62, 80);
+  --title-w-clr: #ffff;
+  --title-b-clr: #000;
+  --footer-clr: rgb(58, 84, 109);
+  --accent-clr: rgb(26, 188, 156);
 }
 
 /*************************************************
-  DEBUG
+  TOP BAR
  *************************************************/
-/* Top Bar */
-.top-bar .row {
-  height: 100px;
+#logo a {
+  font-weight: 600;
+  font-size: clamp(1.3rem, 3.5vw, 2rem);
+  color: var(--title-w-clr);
 }
 
-.logo,
-.navigation {
-  height: 50px;
-  background-color: var(--subtitle-clr);
-  border: dashed 2px var(--border-clr);
+.nav-link:hover {
+  color: var(--accent-clr);
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--title-w-clr);
 }
 
 .top-bar {
-  background-color: var(--bg-clr);
-  height: 100px;
+  background-color: var(--bar-clr);
+}
+
+.fa-bars {
+  color: var(--title-w-clr);
+  font-size: clamp(1.6rem, 3vw, 3rem);
+  cursor: pointer;
+  display: none;
 }
 
 /* Hero/Jumbo */
 .jumbo {
-  background-color: var(--nested-clr);
+  background-color: var(--accent-clr);
 }
 
 .hero-avatar {
   height: 200px;
-  background-color: var(--subtitle-clr);
-  border: dashed 2px var(--border-clr);
+  background-color: var(--title-b-clr);
+  border: dashed 2px var(--accent-clr);
 }
 
 .decoration {
   height: 50px;
-  background-color: var(--subtitle-clr);
-  border: dashed 2px var(--border-clr);
+  background-color: var(--title-b-clr);
+  border: dashed 2px var(--accent-clr);
 }
 
 .hero-text,
 .hero-subheading {
   height: 100px;
-  background-color: var(--subtitle-clr);
-  border: dashed 2px var(--border-clr);
+  background-color: var(--title-b-clr);
+  border: dashed 2px var(--accent-clr);
 }
 
 /* Section Portfolio */
 .portfolio {
-  background-color: var(--bg-clr);
+  background-color: var(--bar-clr);
 }
 
 .title {
   height: 100px;
-  background-color: var(--subtitle-clr);
-  border: dashed 2px var(--border-clr);
+  background-color: var(--title-b-clr);
+  border: dashed 2px var(--accent-clr);
 }
 
 .card {
   height: 250px;
-  background-color: var(--subtitle-clr);
-  border: dashed 2px var(--border-clr);
+  background-color: var(--title-b-clr);
+  border: dashed 2px var(--accent-clr);
 }
 
 /* Section About */
 .about {
-  background-color: var(--nested-clr);
+  background-color: var(--accent-clr);
 }
 
 .about-title {
-  background-color: var(--subtitle-clr);
-  border: dashed 2px var(--border-clr);
+  background-color: var(--title-b-clr);
+  border: dashed 2px var(--accent-clr);
   height: 50px;
 }
 
 .left-text,
 .right-text {
   height: 150px;
-  background-color: var(--subtitle-clr);
+  background-color: var(--title-b-clr);
   border: dashed 2px var(--border-clr);
 }
 
 .btn-download {
-  background-color: var(--subtitle-clr);
+  background-color: var(--title-b-clr);
   border: dashed 2px var(--border-clr);
   height: 50px;
 }
 
 /* Section Contact Me */
 .contact-me {
-  background-color: var(--bg-clr);
+  background-color: var(--bar-clr);
 }
 
 .contact {
-  background-color: var(--subtitle-clr);
+  background-color: var(--title-b-clr);
   border: dashed 2px var(--border-clr);
   height: 400px;
 }
 
 /* Footer */
 .footer-top {
-  background-color: var(--nested-clr);
+  background-color: var(--accent-clr);
 }
 
 .footer-bottom {
-  background-color: var(--bg-clr);
+  background-color: var(--bar-clr);
 }
 
 .debug {
   height: 100px;
-  background-color: var(--subtitle-clr);
+  background-color: var(--title-b-clr);
   border: dashed 2px var(--border-clr);
+}
+
+
+
+
+
+/*************************************************
+  RESPONSIVE
+ *************************************************/
+@media all and (max-width: 992px) {
+  .fa-bars {
+    display: block;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
 }
