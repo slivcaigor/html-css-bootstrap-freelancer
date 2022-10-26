@@ -165,7 +165,7 @@
   color: var(--title-b-clr);
   text-transform: uppercase;
   font-weight: 600;
-  font-size: clamp(1rem, 9vw, 3rem);
+  font-size: clamp(1rem, 9vw, 2.6rem);
 }
 
 .decoration-blck-contact .fa-star {
@@ -180,28 +180,49 @@
   display: inline-block;
   height: 4px;
   border-radius: 10px;
-  width: min(18vw, 250px);
+  width: min(16vw, 250px);
 }
 
 /*************************************************
   FOOTER SECTION
  *************************************************/
 .footer-top {
-  background-color: var(--accent-clr);
+  background-color: var(--footer-clr);
 }
 
 .footer-bottom {
   background-color: var(--bar-clr);
 }
 
-.debug {
-  height: 100px;
-  background-color: var(--title-b-clr);
-  border: dashed 2px var(--border-clr);
+.footer-top h2,
+.footer-bottom h2 {
+  text-transform: uppercase;
+  color: var(--title-w-clr);
+  font-size: clamp(1rem, 9vw, 1.7rem);
+  font-weight: 600;
 }
 
+.footer-top span {
+  color: var(--accent-clr);
+}
 
+.footer-top i {
+  width: min(74px, 74px);
+}
 
+.footer-top p {
+  color: var(--title-w-clr);
+  font-size: clamp(1rem, 7vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.9rem;
+}
+
+.footer-top .fa-brands {
+  color: var(--title-w-clr);
+  font-size: clamp(1rem, 7vw, 1.5rem);
+  border: 1px solid var(--title-w-clr);
+  border-radius: 50%;
+}
 
 
 /*************************************************
